@@ -9,9 +9,8 @@
 	
 	const element = React.createElement(
 		'div', 
-		{className: 'container'},
-		'hello zv'
-	)
+		{className: 'container', children: ['a','b']
+	})
 	console.log(element)
 	ReactDOM.render(element, rootElement)
 
