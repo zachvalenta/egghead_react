@@ -8,8 +8,10 @@
 
 	const rootElement = document.getElementById('root')
 	
-	const content = 'hello zv'
-	const element = <div className='container'>{content} </div>
+	const content = 'hello zach'
+	const customClass = 'container'
+
+	const element = <div className={customClass}> {content} </div>
 
 	ReactDOM.render(element, rootElement)
 
