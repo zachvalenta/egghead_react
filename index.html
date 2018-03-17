@@ -7,13 +7,18 @@
 <script type="text/babel">
 
 	const rootElement = document.getElementById('root')
-	
-	const props = {
-		className: 'container',
-		children: 'hello zv',
-	}
 
-	const element = <div {...props} />
+	const message = props => <div>{props.msg}</div>
+	
+	const element = (
+
+		<div className='container'>
+			{message({msg: 'hi zv'})}
+			{message({msg: 'bye zv'})}
+		</div>
+
+	)
+
 
 	ReactDOM.render(element, rootElement)
 
