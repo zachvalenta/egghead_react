@@ -2,23 +2,27 @@
 
 <script src="https://unpkg.com/react@16.0.0-rc.3/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@16.0.0-rc.3/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/prop-types@15.6.0/prop-types.js"></script>
 <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
 
 <script type="text/babel">
 
 	const rootElement = document.getElementById('root')
 
-	const message = props => <div>{props.msg}</div>
-	
-	const element = (
-
-		<div className='container'>
-			{message({msg: 'hi zv'})}
-			{message({msg: 'bye zv'})}
-		</div>
-
+	const Message = props => (
+	  <div> Hello {props.firstName} {props.lastName}! </div>
 	)
 
+	Message.propTypes = {
+	  firstName: PropTypes.string.isRequired,
+	  lastName: PropTypes.string.isRequired,
+	}
+
+	const element = (
+	  <div className="container">
+	      <Message firstName="z" />
+	  </div>
+	)
 
 	ReactDOM.render(element, rootElement)
 
