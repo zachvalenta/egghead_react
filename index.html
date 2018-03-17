@@ -8,10 +8,12 @@
 
 	const rootElement = document.getElementById('root')
 	
-	const content = 'hello zach'
-	const customClass = 'container'
+	const props = {
+		className: 'container',
+		children: 'hello zv',
+	}
 
-	const element = <div className={customClass}> {content} </div>
+	const element = <div {...props} />
 
 	ReactDOM.render(element, rootElement)
 
