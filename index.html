@@ -34,7 +34,7 @@
 <!-- REACT -->
 <script type="text/babel">
 
-// this is called a function component
+// it blows away the components pre-existing style
 function Box(props){
 	return (
 		<div
@@ -45,9 +45,10 @@ function Box(props){
 	)
 }
 
+// when we add lightblue...
 const element = (
 	<div>
-		<Box>small box</Box>
+		<Box style={{backgroundColor:'lightblue'}}>small box</Box>
 	</div>
 )
 

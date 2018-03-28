@@ -7,6 +7,7 @@
 # 参考
 
 https://github.com/petehunt/react-howto
+https://github.com/gaearon/react-makes-you-sad
 
 # STATE
 
