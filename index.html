@@ -1,20 +1,51 @@
-<div id="root"></div>
-<script src="https://unpkg.com/react@16.0.0-rc.3/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@16.0.0-rc.3/umd/react-dom.development.js"></script>
+<body>
+
+<!-- IMPORTS -->
+<script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/prop-types@15.6.0/prop-types.js"></script>
 <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
-<script type="text/babel">
-const rootElement = document.getElementById('root')
-function tick(){
-	const time = new Date().toLocaleTimeString()
-	// now only re-rendering updated elements
-	const element =
-	 <div>
-	 	It is 
-	 	<input value={time} />
-	 	<input value={time} />
- 	</div>
-	ReactDOM.render(element, rootElement)
+
+<!-- ROOT -->
+<div id="root"></div>
+
+<!-- STYLING -->
+<style>
+.box {
+  border: 1px solid #333;
 }
-tick()
-setInterval(tick, 1000)
+
+.box--large {
+  width: 180px;
+  height: 180px;
+}
+
+.box--medium {
+  width: 120px;
+  height: 120px;
+}
+
+.box--small {
+  width: 60px;
+  height: 60px;
+}
+</style>
+
+<!-- REACT -->
+<script type="text/babel">
+
+const element = (
+	<div>
+		<div style={{paddingLeft:'200px'}}>box</div>
+	</div>
+)
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+)
+
 </script>
+
+<!-- END -->
+</body>
