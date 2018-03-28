@@ -5,10 +5,18 @@
 <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
 <script type="text/babel">
 function Message({message}) {
-  return <div>{message}</div>
+  return (
+    <div>
+      {message ? (
+        <div>{message}</div>
+      ) : (
+        <div>No Message</div>
+      )}
+    </div>
+  )
 }
 ReactDOM.render(
-  <Message message="hello zv" />,
+  <Message message={null} />,
   document.getElementById('root'),
 )
 </script>
