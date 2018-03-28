@@ -34,10 +34,12 @@
 <!-- REACT -->
 <script type="text/babel">
 
-function Box({style, className, ...rest}){
+function Box({style, size, className, ...rest}){
+	const sizeClassName = size ? `box--${size}` : ''
 	return (
 		<div
-			className={`box ${className}`}
+			className={`box ${className}
+			${sizeClassName}`}
 			style={{paddingLeft:20, ...style}}
 			{...rest}
 		/>
@@ -49,7 +51,7 @@ function Box({style, className, ...rest}){
 const element = (
 	<div>
 		<Box 
-		className="box--large"
+		size="small"
 		style={{backgroundColor:'lightblue'}}
 		>
 		small box
