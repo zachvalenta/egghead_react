@@ -1,16 +1,19 @@
 # TODO
 
-Egghead tutorial
+- [ ] Egghead tutorial
+- [ ] official FB tutorial
+- [ ] https://github.com/petehunt/react-howto
 
 # 参考
 
-https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207
-https://courses.wesbos.com/account
-https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6
+https://github.com/petehunt/react-howto
 
 # STATE
 
 Flux --> Redux --> Unstated? MobX?
+https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207
+https://courses.wesbos.com/account
+https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6
 
 # D3
 
