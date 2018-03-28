@@ -34,14 +34,20 @@
 <!-- REACT -->
 <script type="text/babel">
 
-const props = {
-	className: 'box',
-	style: {paddingLeft: 400},
+// this is called a function component
+function Box(props){
+	return (
+		<div
+			className="box"
+			style={{paddingLeft:400}}
+			{...props}
+		/>
+	)
 }
 
 const element = (
 	<div>
-		<div {...props}>box</div>
+		<Box>small box</Box>
 	</div>
 )
 

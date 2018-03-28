@@ -8,6 +8,10 @@ https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207
 https://courses.wesbos.com/account
 https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6
 
+# STATE
+
+Flux --> Redux --> Unstated? MobX?
+
 # D3
 
 https://hackernoon.com/how-and-why-to-use-d3-with-react-d239eb1ea274
