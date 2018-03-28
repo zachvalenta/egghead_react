@@ -35,8 +35,14 @@
 <script type="text/babel">
 
 const element = (
+	/* 
+	passing obj to 'style' (instead of string)
+	keys are camel case (instead of kebab)
+	values are still strings
+	can pass in '20px' or just 20, which React will interpolate as '20px' 
+	*/
 	<div>
-		<div style={{paddingLeft:'200px'}}>box</div>
+		<div style={{paddingLeft:300}}>box</div>
 	</div>
 )
 
