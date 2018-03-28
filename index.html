@@ -1,74 +1,49 @@
 <body>
 
+<!-- ROOT -->
+<div id="root"></div>
+
 <!-- IMPORTS -->
 <script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
 <script src="https://unpkg.com/prop-types@15.6.0/prop-types.js"></script>
 <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
 
-<!-- ROOT -->
-<div id="root"></div>
-
-<!-- STYLING -->
-<style>
-.box {
-  border: 1px solid #333;
-}
-
-.box--large {
-  width: 180px;
-  height: 180px;
-}
-
-.box--medium {
-  width: 120px;
-  height: 120px;
-}
-
-.box--small {
-  width: 60px;
-  height: 60px;
-}
-</style>
-
 <!-- REACT -->
 <script type="text/babel">
 
-function Box({style, size, className, ...rest}){
-	const sizeClassName = size ? `box--${size}` : ''
-	return (
-		<div
-			className={`box ${className}
-			${sizeClassName}`}
-			style={{paddingLeft:20, ...style}}
-			{...rest}
-		/>
-	)
+
+const state = {eventCount: 0, username: ''}
+
+function App() {
+  return (
+    <div>
+      <p>
+        There have been {state.eventCount} events
+      </p>
+      <p>
+        <button>⚛️</button>
+      </p>
+      <p>You typed: {state.username}</p>
+      <p>
+        <input />
+      </p>
+    </div>
+  )
 }
 
-// two divs inside 'element' breaks
-// ? re: how '.render()' takes args?
-const element = (
-	<div>
-		<Box 
-		size="small"
-		style={{backgroundColor:'lightblue'}}
-		>
-		small box
-		</Box>
-		<Box 
-		className="box--medium"
-		style={{backgroundColor:'pink'}}
-		>
-		medium box
-		</Box>
-	</div>
-)
+function setState(newState) {
+  Object.assign(state, newState)
+  renderApp()
+}
 
-ReactDOM.render(
-  element,
-  document.getElementById('root')
-)
+function renderApp() {
+  ReactDOM.render(
+    <App />,
+    document.getElementById('root'),
+  )
+}
+renderApp()
 
 </script>
 
