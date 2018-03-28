@@ -13,6 +13,18 @@ https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6
 https://hackernoon.com/how-and-why-to-use-d3-with-react-d239eb1ea274
 https://medium.com/@Elijah_Meeks/interactive-applications-with-react-d3-f76f7b3ebc71 (src for this in `react`)
 
+# THINGS FOR DESIGN.MD
+
+__server-side rendering__: ["converting HTML files in the server into usable information for the browser"](https://medium.freecodecamp.org/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d) 
+
+not really sure how JAM stack is different than normal SPA
+
+check out that Angular video on SPA, no-framework, with hashes
+
+[server-side actually faster?](http://openmymind.net/2012/5/30/Client-Side-vs-Server-Side-Rendering/)
+
+also --> spread operator = give all array as args (idky diff than just giving array yet 🙃)
+
 # EGGHEAD TUTORIAL
 
 https://github.com/eggheadio-projects/the-beginner-s-guide-to-reactjs
