@@ -31,7 +31,12 @@ check out that Angular video on SPA, no-framework, with hashes
 
 [server-side actually faster?](http://openmymind.net/2012/5/30/Client-Side-vs-Server-Side-Rendering/)
 
-also --> spread operator = give all array as args (idky diff than just giving array yet 🙃)
+
+#THINGS FOR JS.MD
+
+__spread operator__: give all array as args (idky diff than just giving array yet 🙃) https://github.com/wesbos/es6-articles/blob/master/28%20-%20Spread%20Operator%20Introduction.md
+
+__destructuring__: extract obj properties into new var http://wesbos.com/destructuring-objects/
 
 # EGGHEAD TUTORIAL
 

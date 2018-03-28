@@ -34,18 +34,17 @@
 <!-- REACT -->
 <script type="text/babel">
 
-// it blows away the components pre-existing style
-function Box(props){
+// ❓ need to review w/ better understanding of destructuring, spread operator
+function Box({style, ...rest}){
 	return (
 		<div
-			className="box"
-			style={{paddingLeft:400}}
-			{...props}
+			className="box box--small"
+			style={{paddingLeft:20, ...style}}
+			{...rest}
 		/>
 	)
 }
 
-// when we add lightblue...
 const element = (
 	<div>
 		<Box style={{backgroundColor:'lightblue'}}>small box</Box>
