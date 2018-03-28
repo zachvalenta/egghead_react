@@ -35,10 +35,10 @@
 <script type="text/babel">
 
 // now 'className' in props overrides 'className' in component declaration
-function Box({style, ...rest}){
+function Box({style, className, ...rest}){
 	return (
 		<div
-			className="box"
+			className={`box ${className}`}
 			style={{paddingLeft:20, ...style}}
 			{...rest}
 		/>
