@@ -34,7 +34,6 @@
 <!-- REACT -->
 <script type="text/babel">
 
-// now 'className' in props overrides 'className' in component declaration
 function Box({style, className, ...rest}){
 	return (
 		<div
@@ -45,6 +44,8 @@ function Box({style, className, ...rest}){
 	)
 }
 
+// two divs inside 'element' breaks
+// ? re: how '.render()' takes args?
 const element = (
 	<div>
 		<Box 
@@ -52,6 +53,12 @@ const element = (
 		style={{backgroundColor:'lightblue'}}
 		>
 		small box
+		</Box>
+		<Box 
+		className="box--medium"
+		style={{backgroundColor:'pink'}}
+		>
+		medium box
 		</Box>
 	</div>
 )
