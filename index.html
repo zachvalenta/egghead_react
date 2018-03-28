@@ -34,11 +34,11 @@
 <!-- REACT -->
 <script type="text/babel">
 
-// ❓ need to review w/ better understanding of destructuring, spread operator
+// now 'className' in props overrides 'className' in component declaration
 function Box({style, ...rest}){
 	return (
 		<div
-			className="box box--small"
+			className="box"
 			style={{paddingLeft:20, ...style}}
 			{...rest}
 		/>
@@ -47,7 +47,12 @@ function Box({style, ...rest}){
 
 const element = (
 	<div>
-		<Box style={{backgroundColor:'lightblue'}}>small box</Box>
+		<Box 
+		className="box--large"
+		style={{backgroundColor:'lightblue'}}
+		>
+		small box
+		</Box>
 	</div>
 )
 
