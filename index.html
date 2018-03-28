@@ -6,17 +6,14 @@
 const rootElement = document.getElementById('root')
 function tick(){
 	const time = new Date().toLocaleTimeString()
-	// bc ReactDOM.render no longer handling
-	// entire DOM updates
-	const element = `
+	// now only re-rendering updated elements
+	const element =
 	 <div>
 	 	It is 
-	 	<input value="${time}" />
-	 	<input value="${time}" />
+	 	<input value={time} />
+	 	<input value={time} />
  	</div>
-	`
-	rootElement.innerHTML = element
-	// ReactDOM.render(element, rootElement)
+	ReactDOM.render(element, rootElement)
 }
 tick()
 setInterval(tick, 1000)
