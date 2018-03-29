@@ -41,6 +41,14 @@ __destructuring__: extract obj properties into new var http://wesbos.com/destruc
 
 come back to this later --> https://github.com/zachvalenta/tutorial_react_egghead.io/commit/2a84f7d86f460369b6c64cb577fc2f56c95254ee
 
+## REMOVE EL FROM ARRAY LODASH
+
+var array = [1, 2, 3, 4];
+var evens3 = _.remove(array, function(n) {return n != 2;});
+
+var array1 = [1, 2, 3, 4];
+var evens1 = _.remove(array, (n) => return n == 2;});
+
 # EGGHEAD TUTORIAL
 
 https://github.com/eggheadio-projects/the-beginner-s-guide-to-reactjs
