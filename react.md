@@ -5,10 +5,26 @@
 - [ ] Corey House tutorial
 - [ ] https://github.com/petehunt/react-howto
 
+📍 debug tip: look to higher or lower level of abstraction --> have your debug strats, oblique dev strats, and design strats (unit testing *for design*) open in Sublime at all times
+
+📍 project idea: little React app with canvas/SVG to make a developer version of Oblique Strategies --> move to `#projects`!
+
+first time understanding that sources tab in dev tools is kinda like IDE (with browser also acting as runtime), as compared to more intuitive setup of Python running on your machine and in your IDE i.e. same place
+
+deviation from habits schedule has lead to further deviation (diet)
+
+composible = component has override-able defaults
+
+Architecture of Open Source for mtg w/ Ariel
+
 # 参考
 
 https://github.com/petehunt/react-howto
 https://github.com/gaearon/react-makes-you-sad
+
+# JEST
+
+same as Jasmine + mock dependency
 
 # STATE
 
@@ -48,6 +64,8 @@ var evens3 = _.remove(array, function(n) {return n != 2;});
 
 var array1 = [1, 2, 3, 4];
 var evens1 = _.remove(array, (n) => return n == 2;});
+
+indexOf = where does something show up for the first time
 
 # EGGHEAD TUTORIAL
 
